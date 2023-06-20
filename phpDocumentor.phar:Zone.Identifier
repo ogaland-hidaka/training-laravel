@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/phpDocumentor/phpDocumentor/releases
+HostUrl=https://objects.githubusercontent.com/github-production-release-asset-2e65be/761653/8c13b2c5-043f-4005-a188-819269834876?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20221230%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221230T022734Z&X-Amz-Expires=300&X-Amz-Signature=5089077725cd0ba5365daa11893f7bc2213e36b88ff2bf14513f74173e05196f&X-Amz-SignedHeaders=host&actor_id=63274577&key_id=0&repo_id=761653&response-content-disposition=attachment%3B%20filename%3DphpDocumentor.phar&response-content-type=application%2Foctet-stream
