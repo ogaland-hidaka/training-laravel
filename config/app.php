@@ -176,6 +176,10 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\Sha1HasherServiceProvider::class,
 
+        /** level02 Step08 START */
+        App\Providers\RepositoryServiceProvider::class,
+        /** level02 Step08 END */
+
     ],
 
     /*
