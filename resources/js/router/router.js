@@ -3,6 +3,8 @@ import store from '@/store/index.js'
 import Router from "vue-router";
 
 import Dashboard from "@/views/Dashboard/Dashboard.vue";
+import TechnologicalPerspective from "@/views/TechnologicalPerspective/TechnologicalPerspective.vue";
+
 
 
 const router = new Router({
@@ -13,6 +15,11 @@ const router = new Router({
             path: "/dashboard",
             name: "Dashboard",
             component: Dashboard,
+        },
+        {
+            path: "/technological_perspective",
+            name: "TechnologicalPerspective",
+            component: TechnologicalPerspective,
         }
     ],
 });

@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\API\PostApi;
 use App\Http\Controllers\API\CommentApi;
+use App\Http\Controllers\API\BookApi;
+use App\Http\Controllers\API\RentalApi;
+use App\Http\Controllers\API\ReviewApi;
 
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
@@ -56,3 +59,18 @@ Route::prefix('training/posts')->group(function () {
     Route::delete('/{postId}/comments/{commentId}', [CommentApi::class, 'delete']);
 });
 /** level01 Step06 END */
+
+/** level04 Step01 START */
+Route::prefix('training/books')->group(function () {
+    // BookApi
+    Route::post('/', [BookApi::class, 'create']);
+    Route::get('/', [BookApi::class, 'index']);
+    Route::get('/{bookId}', [BookApi::class, 'show']);
+    // rentalApi
+    Route::post('/{bookId}/rentals', [RentalApi::class, 'create']);
+    Route::get('/{bookId}/rentals/{rentalId}', [RentalApi::class, 'show']);
+    // reviewApi
+    Route::post('/{bookId}/reviews', [ReviewApi::class, 'create']);
+    Route::get('/{bookId}/reviews/{reviewId}', [ReviewApi::class, 'show']);
+});
+/** level04 Step01 END */

@@ -19,3 +19,4 @@ Route::get('/app{any}', 'IndexController@index')->where('any', '(/?$|/.*)');
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/training', 'IndexController@index')->where('any', '(/?$|/.*)');

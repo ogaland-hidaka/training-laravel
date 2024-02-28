@@ -19,7 +19,8 @@ class TPostRepository implements TPostRepositoryInterface
     public function index()
     {
         // 論理削除されていないレコードのみ抽出
-        return TPost::whereNull('deleted_at')->get();
+        $posts = TPost::all()->toArray();
+        return $posts;
     }
 
     /**
